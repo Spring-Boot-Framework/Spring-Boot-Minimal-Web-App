@@ -5,7 +5,7 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App)](https://github.com/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App/stargazers)
 [![BCH compliance](https://bettercodehub.com/edge/badge/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App?branch=main)](https://bettercodehub.com/)
 
-This is a simple Spring Boot Web Application with minimal code.
+This is a simple Spring Boot Web Application with a single REST end point with minimal code for quick testing of deployment services and other purposes.
 
 ## Installing
 
@@ -55,3 +55,5 @@ To shutdown the jar, follow the below mentioned steps on a Windows machine.
 |            URL          | Method |                      Remarks                       |
 |-------------------------|--------|----------------------------------------------------|
 |`http://localhost:8080/` | GET    | Simple Web Controller, returns a `String` response.|
+
+**`curl http://localhost:8080/`** produces a sample response like **`Greetings from Spring Boot Minimal Web Application! - 2020-12-08T20:36:04.346`**

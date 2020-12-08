@@ -8,11 +8,40 @@
 		<version>2.4.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+	
 	<groupId>io.github.anantharajuc</groupId>
 	<artifactId>Spring-Boot-Minimal-Web-App</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	
 	<name>Spring-Boot-Minimal-Web-App</name>
+	<url>https://github.com/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App</url>
 	<description>Spring Boot Minimal Web Application</description>
+	
+	<!-- Start - Spring Boot Application Template Project Owner -->
+	<developers>
+		<developer>
+			<name>Anantha Raju C</name>
+			<email>arcswdev@gmail.com</email>
+			<timezone>UTC+05:30</timezone>
+		</developer>
+	</developers>
+	<!-- End - Spring Boot Application Template Project Owner -->
+	
+	<!-- Start - Spring Boot Application Template source repository -->
+    <scm>
+        <connection>https://github.com/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App.git</connection>
+        <developerConnection>git@github.com:Spring-Boot-Framework/Spring-Boot-Minimal-Web-App.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+    <!-- End - Spring Boot Application Template source repository -->
+    
+    <!-- Start - Spring Boot Application Template issue management -->
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App/issues</url>
+    </issueManagement>
+    <!-- End - Spring Boot Application Template issue management -->
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -38,6 +67,7 @@
 
 	<build>
 		<plugins>
+			<!-- Package as an executable jar/war. -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
