@@ -3,6 +3,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App)](https://github.com/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App/network)
 [![GitHub pull requests](https://img.shields.io/github/stars/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App)](https://github.com/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App/stargazers)
 [![GitHub last commit](https://img.shields.io/github/last-commit/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App)](https://github.com/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App/stargazers)
+[![BCH compliance](https://bettercodehub.com/edge/badge/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App?branch=main)](https://bettercodehub.com/)
 
 This is a simple Spring Boot Web Application with minimal code.
 
