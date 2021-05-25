@@ -18,7 +18,7 @@
 	<url>https://github.com/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App</url>
 	<description>Spring Boot Minimal Web Application</description>
 	
-	<!-- Start - Spring Boot Application Template Project Owner -->
+	<!-- Start - Spring-Boot-Minimal-Web-App Project Owner -->
 	<developers>
 		<developer>
 			<name>Anantha Raju C</name>
@@ -26,22 +26,22 @@
 			<timezone>UTC+05:30</timezone>
 		</developer>
 	</developers>
-	<!-- End - Spring Boot Application Template Project Owner -->
+	<!-- End - Spring-Boot-Minimal-Web-App Project Owner -->
 	
-	<!-- Start - Spring Boot Application Template source repository -->
+	<!-- Start - Spring-Boot-Minimal-Web-App source repository -->
     <scm>
         <connection>https://github.com/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App.git</connection>
         <developerConnection>git@github.com:Spring-Boot-Framework/Spring-Boot-Minimal-Web-App.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
-    <!-- End - Spring Boot Application Template source repository -->
+    <!-- End - Spring-Boot-Minimal-Web-App source repository -->
     
-    <!-- Start - Spring Boot Application Template issue management -->
+    <!-- Start - Spring-Boot-Minimal-Web-App issue management -->
     <issueManagement>
         <system>GitHub</system>
         <url>https://github.com/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App/issues</url>
     </issueManagement>
-    <!-- End - Spring Boot Application Template issue management -->
+    <!-- End - Spring-Boot-Minimal-Web-App issue management -->
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -57,6 +57,19 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		
+		<!-- Start - POJO creation made easy -->
+		<dependency>
+	      <groupId>org.projectlombok</groupId>
+	      <artifactId>lombok</artifactId>
+	      <optional>true</optional>
+	    </dependency>
+	    <!-- End - POJO creation made easy -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
