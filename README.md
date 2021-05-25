@@ -60,3 +60,22 @@ To shutdown the jar, follow the below mentioned steps on a Windows machine.
 |`http://localhost:8080/` | DELETE | Simple Web Controller, returns a `String` response.|
 
 **`curl http://localhost:8080/`** produces a sample response like **`HTTP GET Handled - 2021-05-25T15:02:16.928`**
+
+## Docker
+
+docker images  
+docker build -t spring-boot-minimal-web-app .  
+docker images  
+
+docker run -p 8080:8080 --name spring-boot-minimal-web-app spring-boot-minimal-web-app  
+docker ps  
+docker ps -a  
+
+docker stop spring-boot-minimal-web-app  
+
+docker images  
+docker rm spring-boot-minimal-web-app  
+docker image rm -f spring-boot-minimal-web-app  
+
+docker tag spring-boot-minimal-web-app anantha/spring-boot-minimal-web-app:latest  
+docker push anantha/spring-boot-minimal-web-app:latest  
