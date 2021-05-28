@@ -18,8 +18,8 @@ There are several ways to run a Spring Boot application on your local machine. O
 Alternatively you can use the [Spring Boot Maven plugin](https://docs.spring.io/spring-boot/docs/current/reference/html/build-tool-plugins-maven-plugin.html) like so:
 
 ```shell
-$ git clone https://github.com/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App.git
-$ cd Spring-Boot-Application-Template
+$ git clone https://github.com/AnanthaRajuC/Spring-Boot-Minimal-Web-App.git
+$ cd Spring-Boot-Minimal-Web-App
 $ mvn spring-boot:run
 ```
 
@@ -28,7 +28,7 @@ $ mvn spring-boot:run
 The code can also be built into a jar and then executed/run. Once the jar is built, run the jar by double clicking on it or by using the command 
 
 ```shell
-$ git clone https://github.com/Spring-Boot-Framework/Spring-Boot-Application-Template.git
+$ git clone https://github.com/AnanthaRajuC/Spring-Boot-Minimal-Web-App.git
 $ cd Spring-Boot-Minimal-Web-App
 $ mvn clean package
 $ java -jar target/Spring-Boot-Minimal-Web-App-0.0.1-SNAPSHOT.jar
