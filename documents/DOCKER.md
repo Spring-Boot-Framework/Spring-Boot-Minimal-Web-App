@@ -2,26 +2,34 @@
 
 #### Docker Commands
 
-docker images  
-docker build -t spring-boot-minimal-web-app .  
-docker images  
+##### Build Docker Image from Dockerfile
 
-docker run -p 8080:8080 --name spring-boot-minimal-web-app spring-boot-minimal-web-app  
-docker ps  
-docker ps -a  
+`docker images`  
+`docker build -t spring-boot-minimal-web-app .`  
+`docker images`  
 
-docker stop spring-boot-minimal-web-app  
+##### Run & Stop the Docker Image built from previous step
 
-docker images  
-docker rm spring-boot-minimal-web-app  
-docker image rm -f spring-boot-minimal-web-app  
+`docker run -p 8080:8080 --name spring-boot-minimal-web-app spring-boot-minimal-web-app`  
+`docker ps`  
+`docker stop spring-boot-minimal-web-app`
+`docker ps -a`  
 
-docker tag spring-boot-minimal-web-app anantha/spring-boot-minimal-web-app:latest  
-docker push anantha/spring-boot-minimal-web-app:latest  
+##### Docker Tag image with dockerhub username and push it to dockerhub
+
+`docker tag spring-boot-minimal-web-app anantha/spring-boot-minimal-web-app:latest`  
+`docker images`  
+`docker push anantha/spring-boot-minimal-web-app:latest`  
+
+##### Remove Docker Image
+
+`docker images`  
+`docker image rm spring-boot-minimal-web-app`  
+`docker image rm -f spring-boot-minimal-web-app`  
 
 #### Running the application manually via docker container
 
-* 	[anantha/spring-boot-minimal-web-app](https://hub.docker.com/r/anantha/spring-boot-application-template/tags) - DockerHub Image
+* 	[anantha/spring-boot-minimal-web-app](https://hub.docker.com/r/anantha/spring-boot-minimal-web-app) - DockerHub Image
 
 DockerHub Pull Command if you want to directly pull the docker image of the application from Docker Hub.
 
