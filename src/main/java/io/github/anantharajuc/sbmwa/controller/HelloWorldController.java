@@ -20,7 +20,7 @@ public class HelloWorldController
 	private final AtomicLong counter = new AtomicLong();
 	
 	@GetMapping()
-	public ResponseEntity<RESTcontrollerResponse> helloWorld() 
+	public ResponseEntity<RESTcontrollerResponse> get() 
 	{
 		log.info("-----> HTTP GET Handled - "+LocalDateTime.now());
 		
@@ -28,7 +28,7 @@ public class HelloWorldController
 	}
 	
 	@PostMapping
-	public ResponseEntity<RESTcontrollerResponse> createProduct()
+	public ResponseEntity<RESTcontrollerResponse> post()
 	{
 		log.info("-----> HTTP POST Handled - "+LocalDateTime.now());
 		
@@ -36,7 +36,7 @@ public class HelloWorldController
 	}
 	
 	@PutMapping
-	public ResponseEntity<RESTcontrollerResponse> updateProduct()
+	public ResponseEntity<RESTcontrollerResponse> put()
 	{
 		log.info("-----> HTTP PUT Handled - "+LocalDateTime.now());
 		
@@ -44,7 +44,7 @@ public class HelloWorldController
 	}
 	
 	@DeleteMapping
-	public ResponseEntity<RESTcontrollerResponse> deleteProduct()
+	public ResponseEntity<RESTcontrollerResponse> delete()
 	{
 		log.info("-----> HTTP DELETE Handled - "+LocalDateTime.now());
 		
