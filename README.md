@@ -36,13 +36,13 @@ This is a simple, self-conatined Spring Boot Web Application with REST end point
 
 ### URLs
 
-|                      URL          | Method |                      Remarks                       |
-|-----------------------------------|--------|----------------------------------------------------|
-|`http://localhost:8080/`           | GET    | Simple Web Controller, returns a `String` response.|
-|`http://localhost:8080/`           | PUT    | Simple Web Controller, returns a `String` response.|
-|`http://localhost:8080/`           | POST   | Simple Web Controller, returns a `String` response.|
-|`http://localhost:8080/`           | DELETE | Simple Web Controller, returns a `String` response.|
-|`http://localhost:8080/index.html` |GET     |Returns `index.html` page|
+|                      URL          | Method |                      Remarks                     |
+|-----------------------------------|--------|--------------------------------------------------|
+|`http://localhost:8080/`           | GET    | Simple Web Controller, returns a `json` response.|
+|`http://localhost:8080/`           | PUT    | Simple Web Controller, returns a `json` response.|
+|`http://localhost:8080/`           | POST   | Simple Web Controller, returns a `json` response.|
+|`http://localhost:8080/`           | DELETE | Simple Web Controller, returns a `json` response.|
+|`http://localhost:8080/index.html` | GET    | Returns `index.html` page                        |
 
 **`curl http://localhost:8080/`** produces a sample response like **`HTTP GET Handled - 2021-05-25T15:02:16.928`**
 

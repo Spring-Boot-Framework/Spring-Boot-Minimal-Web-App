@@ -70,6 +70,24 @@
 	      <optional>true</optional>
 	    </dependency>
 	    <!-- End - POJO creation made easy -->
+	    
+	    <!-- Start - Database migration dependencies -->
+		<dependency>
+	      <groupId>org.flywaydb</groupId>
+	      <artifactId>flyway-core</artifactId>
+	    </dependency>
+		<!-- End - Database migration dependencies -->
+		
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
+		</dependency>	
+		<dependency>
+		    <groupId>io.github.cdimascio</groupId>
+		    <artifactId>java-dotenv</artifactId>
+		    <version>5.2.2</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
