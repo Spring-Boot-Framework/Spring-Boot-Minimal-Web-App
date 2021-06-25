@@ -26,7 +26,7 @@ public class SpringBootMinimalWebAppApplication
 		
 		Dotenv dotenv = Dotenv.load();
 		
-		log.info("-----> Secret Credential 1 - "+dotenv.get("SECRET_CREDENTIAL1", "Unable to fetch SECRET_CREDENTIAL1"));
-		log.info("-----> Secret Credential 2 - "+dotenv.get("SECRET_CREDENTIAL2", "Unable to fetch SECRET_CREDENTIAL2"));
+		log.info("-----> My Secret Environment Variable 1 - "+dotenv.get("MY_ENV_VAR1", "Unable to fetch SECRET_CREDENTIAL1"));
+		log.info("-----> My Secret Environment Variable 2 - "+dotenv.get("MY_ENV_VAR2", "Unable to fetch SECRET_CREDENTIAL2"));
 	}
 }
