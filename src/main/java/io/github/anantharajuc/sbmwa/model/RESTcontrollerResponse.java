@@ -1,5 +1,8 @@
 package io.github.anantharajuc.sbmwa.model;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.v3.oas.annotations.media.Schema;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -20,10 +23,12 @@ import lombok.experimental.FieldDefaults;
 @NoArgsConstructor
 @ToString
 @FieldDefaults(level=AccessLevel.PRIVATE)
+@ApiModel(description="Simple JavaBean domain object representing RESTcontrollerResponse") 
 public class RESTcontrollerResponse 
 {
 	@Id
 	long id;
 	
+	@Schema(description="RESTcontrollerResponse content", example="HTTP Method Handled.", required=true)
 	String content;
 }
