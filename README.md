@@ -32,6 +32,14 @@ This is a simple, self-conatined Spring Boot Web Application with REST end point
 - [Installation](documents/INSTALLATION.MD)  
 - [Docker](documents/DOCKER.md)  
 
+**Note** : This project has been used as an example for the following blog posts.
+
+- [Swagger UI and Spring Boot](https://anantharajuc.github.io/Spring-Boot-Swagger/)
+- [Docker and Spring Boot](https://anantharajuc.github.io/Spring-Boot-Docker/)
+- [Flyway version control for Relational Databases with Spring Boot](https://anantharajuc.github.io/Spring-Boot-Flyway/)
+- [Loading Environment Variables via dotenv-java](https://anantharajuc.github.io/dotenv-java/)
+- [Deploying Spring Boot Web Application on Heroku](https://anantharajuc.github.io/Spring-Boot-Heroku/)
+
 ## Explore Rest APIs
 
 ### URLs
