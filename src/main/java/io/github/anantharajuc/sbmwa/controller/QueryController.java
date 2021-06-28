@@ -15,6 +15,12 @@ import io.swagger.v3.oas.annotations.Operation;
 
 import lombok.extern.log4j.Log4j2;
 
+/*
+ * Query Controller
+ *
+ * @author <a href="mailto:arcswdev@gmail.com">Anantha Raju C</a>
+ *
+ */
 @Log4j2
 @RestController()
 @RequestMapping(value="/")
