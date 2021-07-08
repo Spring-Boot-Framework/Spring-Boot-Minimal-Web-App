@@ -15,3 +15,16 @@ CREATE TABLE `rest_controller_response` (
   `verb` varchar(255) NOT NULL,
   `content` varchar(255) NOT NULL
 );
+
+--
+-- Table structure for table `person`
+--
+
+CREATE TABLE `person` (
+  `id` bigint(20) PRIMARY KEY AUTO_INCREMENT,
+  `created_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `last_modified_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `name` VARCHAR(128),
+  `email` VARCHAR(128),
+  `mobile_number` VARCHAR(128)
+);

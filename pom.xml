@@ -49,6 +49,7 @@
 		
 		<springdoc-openapi-ui.version>1.2.32</springdoc-openapi-ui.version>
 		<swagger-annotations.version>1.6.1</swagger-annotations.version>
+		<modelmapper.version>2.4.4</modelmapper.version>
 	</properties>
 
 	<dependencies>
@@ -116,6 +117,12 @@
 			<version>${swagger-annotations.version}</version>
 		</dependency>
 		<!-- End - API documentation with Swagger -->
+		
+		<dependency>
+		    <groupId>org.modelmapper</groupId>
+		    <artifactId>modelmapper</artifactId>
+		    <version>${modelmapper.version}</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
