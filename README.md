@@ -52,15 +52,29 @@ This is a simple, self-conatined Spring Boot Web Application with REST end point
 
 ### URLs
 
-|                      URL          | Method |                      Remarks                     |
-|-----------------------------------|--------|--------------------------------------------------|
-|`http://localhost:8080/`           | GET    | Simple Web Controller, returns a `json` response.|
-|`http://localhost:8080/`           | PUT    | Simple Web Controller, returns a `json` response.|
-|`http://localhost:8080/`           | POST   | Simple Web Controller, returns a `json` response.|
-|`http://localhost:8080/`           | DELETE | Simple Web Controller, returns a `json` response.|
-|`http://localhost:8080/index.html` | GET    | Returns `index.html` page                        |
+| RESTful URL                      | HTTP Action | Noun |Business Operation |Sample Valid Request Body | 
+|----------------------------------|-------------|------|-------------------|--------------------------|
+|`/api/person`                     |GET          |person|get all persons    |                          |  
+|`/api/person`                     |POST         |person|create person      |[JSON](#person)           |  
+|`/api/person/{id}`                |PUT          |person|update person      |[JSON](#person)           | 
+|`/api/person/{id}`                |GET          |person|get person by id   |                          |  
+|`/api/person/{id}`                |DELETE       |person|delete person by id|                          | 
 
-**`curl http://localhost:8080/`** produces a sample response like **`HTTP GET Handled - 2021-05-25T15:02:16.928`**
+|Web URL                           | HTTP Action | Operation                | 
+|----------------------------------|-------------|--------------------------|
+|`http://localhost:8080/index.html`| GET         | Returns `index.html` page|
+
+### Sample Valid JSON Request Body
+
+##### <a id="person">Person -> /api/person</a>
+
+```json
+{
+	"name": "Johnny",
+	"email": "examplex@domain.com",
+	"mobileNumber": "123456789x"
+}
+```
 
 <!-- CONTRIBUTING -->
 ## Contributing
