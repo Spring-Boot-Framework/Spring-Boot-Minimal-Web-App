@@ -22,10 +22,18 @@ This is a simple, self-conatined Spring Boot Web Application with REST end point
 	<a href="https://github.com/AnanthaRajuC/Spring-Boot-Minimal-Web-App/issues">Request Feature</a>
 </p>
 
-[![GitHub forks](https://img.shields.io/github/forks/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App)](https://github.com/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App/network)
-[![GitHub pull requests](https://img.shields.io/github/stars/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App)](https://github.com/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App/stargazers)
-[![GitHub last commit](https://img.shields.io/github/last-commit/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App)](https://github.com/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App/stargazers)
 [![BCH compliance](https://bettercodehub.com/edge/badge/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App?branch=main)](https://bettercodehub.com/)
+
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+-->
+
+|     Service     | Badge | Badge | Badge | Badge | Badge |
+|-----------------|-------|-------|-------|-------|-------|
+|  **GitHub**     |[![GitHub last commit](https://img.shields.io/github/last-commit/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App)](https://github.com/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App/commits/master)|[![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App)](https://github.com/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App/pulls)|[![GitHub issues](https://img.shields.io/github/issues/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App)](https://github.com/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App/issues)|[![GitHub forks](https://img.shields.io/github/forks/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App)](https://github.com/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App/network)|[![GitHub stars](https://img.shields.io/github/stars/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App)](https://github.com/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App/stargazers)|
+|  **GitHub**     |![GitHub repo size](https://img.shields.io/github/repo-size/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App)|![GitHub top language](https://img.shields.io/github/languages/top/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App.svg)|![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App)|![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App.svg)|![GitHub language count](https://img.shields.io/github/languages/count/Spring-Boot-Framework/Spring-Boot-Minimal-Web-App)|
 
 ## Details
 
