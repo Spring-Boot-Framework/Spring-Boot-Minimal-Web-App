@@ -1,3 +1,9 @@
+/*
+ * Engine: H2DB
+ * Version: 0.0.1
+ * Description: Initial database structure
+ */
+
 --
 -- Table structure for table `Rest_Controller_Response`
 --

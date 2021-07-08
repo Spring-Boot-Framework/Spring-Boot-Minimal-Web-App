@@ -1,3 +1,23 @@
+/*
+ * Engine: MySQL
+ * Version: 0.0.1
+ * Description: Initial database structure
+ */
+
+/*
+-- create schema
+CREATE SCHEMA sbmwa;
+
+-- use schema
+USE sbmwa;
+
+-- Create user 
+create user 'sbmwa'@'localhost' identified by 'sbmwa';
+
+-- Grant privileges to user
+grant all privileges on *.* to 'sbmwa'@'localhost' with grant option;
+ */
+
 --
 -- Table structure for table `Rest_Controller_Response`
 --

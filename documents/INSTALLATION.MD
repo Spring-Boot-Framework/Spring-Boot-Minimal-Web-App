@@ -54,7 +54,7 @@ Fill the login form as follows and click on Connect:
 * 	Saved Settings: **Generic H2 (Embedded)**
 * 	Setting Name: **Generic H2 (Embedded)**
 * 	Driver class: **org.h2.Driver**
-* 	JDBC URL: **jdbc:h2:mem:sbat;MODE=MySQL**
+* 	JDBC URL: **jdbc:h2:mem:sbmwa;MODE=MySQL**
 * 	User Name: **sa**
 * 	Password:
 

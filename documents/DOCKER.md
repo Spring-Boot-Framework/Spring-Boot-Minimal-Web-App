@@ -1,5 +1,29 @@
 ## Docker
 
+#### Running the application manually via docker container
+
+* 	[anantha/spring-boot-minimal-web-app](https://hub.docker.com/r/anantha/spring-boot-minimal-web-app) - DockerHub Image
+
+DockerHub Pull Command if you want to directly pull the docker image of the application from Docker Hub.
+
+```shell
+docker pull anantha/spring-boot-minimal-web-app:latest
+```
+
+**NOTE:** If you want to build a docker image from the source code, ensure you build a jar of the application before building a docker image.  
+
+```shell
+$ mvn package -Dmaven.test.skip=true     //skip all tests and build. The build once completed is available in **target** folder
+```
+
+```shell
+$ mvn clean package                      //run all tests and build
+```
+
+A runnable jar file gets built and is available in the **target** folder
+
+On Windows machine use **Docker Quickstart Terminal** or, use **Windows Powershell** and navigate to the project folder where Dockerfile is present.
+
 #### Docker Commands
 
 ##### Build Docker Image from Dockerfile
@@ -26,30 +50,6 @@
 `docker images`  
 `docker image rm spring-boot-minimal-web-app`  
 `docker image rm -f spring-boot-minimal-web-app`  
-
-#### Running the application manually via docker container
-
-* 	[anantha/spring-boot-minimal-web-app](https://hub.docker.com/r/anantha/spring-boot-minimal-web-app) - DockerHub Image
-
-DockerHub Pull Command if you want to directly pull the docker image of the application from Docker Hub.
-
-```shell
-docker pull anantha/spring-boot-minimal-web-app:latest
-```
-
-**NOTE:** If you want to build a docker image from the source code, ensure you build a jar of the application before building a docker image.  
-
-```shell
-$ mvn package -Dmaven.test.skip=true     //skip all tests and build. The build once completed is available in **target** folder
-```
-
-```shell
-$ mvn clean package                      //run all tests and build
-```
-
-A runnable jar file gets built and is available in the **target** folder
-
-On Windows machine use **Docker Quickstart Terminal** or, use **Windows Powershell** and navigate to the project folder where Dockerfile is present.
 
 #### Basic Docker commands for reference
 
