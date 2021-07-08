@@ -84,6 +84,6 @@ Checkout additional Docker and DockerHub commands here, [https://github.com/Anan
 
 **Examples:**
 
-*	re-tagging an existing local image : `docker tag spring-boot-application-template anantha/spring-boot-application-template:h2db-test-profile`
-*	commit changes                     : `docker commit pedantic_turing anantha/spring-boot-application-template:h2db-test-profile`
-*	docker push                        : `docker push anantha/spring-boot-application-template:h2db-test-profile`
+*	re-tagging an existing local image : `docker tag spring-boot-minimal-web-app anantha/spring-boot-minimal-web-app:h2db-profile`
+*	commit changes                     : `docker commit pedantic_turing anantha/spring-boot-minimal-web-app:h2db-profile`
+*	docker push                        : `docker push anantha/spring-boot-minimal-web-app:h2db-profile`

@@ -1,5 +1,9 @@
 ## Installation
 
+*	Default active profile is **`h2db`**. When the application is running, **Flyway** will create the necessary tables and system data along with sample data. In this profile, the application uses **H2** database (data in memory).
+
+* 	Other profil **`mysql`** is available. Change the **spring.profiles.active** property in the **application.properties** file to any of the profiles to use it.
+
 #### Running the application with IDE
 
 There are several ways to run a Spring Boot application on your local machine. One way is to execute the `main` method in the `io.github.anantharajuc.sbmwa` class from your IDE.
@@ -38,3 +42,26 @@ To shutdown the jar, follow the below mentioned steps on a Windows machine.
 
 *	In command prompt execute the **jcmd** command to print a list of all running Java processes
 *	**Taskkill /PID PROCESS_ID_OF_RUNNING_APP /F** execute this command by replacing the **PROCESS_ID_OF_RUNNING_APP** with the actual process id of the running jar found out from executing the previous command
+
+##### Accessing Data in H2 Database
+
+###### H2 Console
+
+URL to access H2 console: **http://localhost:8080/h2-console/login.jsp**
+
+Fill the login form as follows and click on Connect:
+
+* 	Saved Settings: **Generic H2 (Embedded)**
+* 	Setting Name: **Generic H2 (Embedded)**
+* 	Driver class: **org.h2.Driver**
+* 	JDBC URL: **jdbc:h2:mem:sbat;MODE=MySQL**
+* 	User Name: **sa**
+* 	Password:
+
+<img src="images\h2db\h2-console-login.PNG"/>
+
+<img src="images\h2db\h2-console-main-view.PNG"/>
+
+#### Running the application via docker container
+
+* 	Refer to [DOCKER.md](./DOCKER.md) for details.
