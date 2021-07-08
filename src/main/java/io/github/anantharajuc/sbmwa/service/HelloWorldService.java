@@ -9,7 +9,7 @@ public interface HelloWorldService
 {
 	RESTcontrollerResponse getService();
 	
-	RESTcontrollerResponse postService();
+	RESTcontrollerResponse postService(RESTcontrollerResponse restControllerResponse);
 	
 	RESTcontrollerResponse putService();
 	

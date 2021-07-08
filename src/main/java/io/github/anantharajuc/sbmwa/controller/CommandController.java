@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -42,11 +43,11 @@ public class CommandController
 	
 	@Operation(summary="HTTP POST Operation")
 	@PostMapping
-	public ResponseEntity<RESTcontrollerResponse> post()
+	public ResponseEntity<RESTcontrollerResponse> post(@RequestBody RESTcontrollerResponse restControllerResponse)
 	{
 		log.info("-----> HTTP POST Handled - "+LocalDateTime.now());
 		
-		return ResponseEntity.ok(helloWorldServiceImpl.postService());
+		return ResponseEntity.ok(helloWorldServiceImpl.postService(restControllerResponse));
 	}
 	
 	@Operation(summary="HTTP DELETE Operation")

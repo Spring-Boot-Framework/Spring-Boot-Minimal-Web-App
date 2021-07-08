@@ -89,6 +89,13 @@
 			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
 		</dependency>	
+		<!-- Start - Database driver for mysql -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<!-- End - Database driver for mysql -->
 		<dependency>
 		    <groupId>io.github.cdimascio</groupId>
 		    <artifactId>java-dotenv</artifactId>

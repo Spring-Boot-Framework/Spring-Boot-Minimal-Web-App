@@ -46,9 +46,9 @@ public class HelloWorldServiceImpl implements HelloWorldService
 	}
 
 	@Override
-	public RESTcontrollerResponse postService() 
+	public RESTcontrollerResponse postService(RESTcontrollerResponse restControllerResponse) 
 	{
-		RESTcontrollerResponse restControllerResponse;
+		/*RESTcontrollerResponse restControllerResponse;
 		
 		restControllerResponse = restControllerResponseRepository.getResponseByVerb("POST");
 		
@@ -56,7 +56,9 @@ public class HelloWorldServiceImpl implements HelloWorldService
 		
 		restControllerResponse.setTotalRequestsCounter(counter.incrementAndGet());
 		
-		return restControllerResponse;
+		return restControllerResponse;*/
+		
+		return restControllerResponseRepository.save(restControllerResponse);
 	}
 
 	@Override

@@ -4,6 +4,7 @@ import java.time.LocalDateTime;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 import io.github.cdimascio.dotenv.Dotenv;
 import lombok.extern.log4j.Log4j2;
@@ -16,6 +17,7 @@ import lombok.extern.log4j.Log4j2;
  */
 @Log4j2
 @SpringBootApplication
+@EnableJpaAuditing
 public class SpringBootMinimalWebAppApplication 
 {
 	public static void main(String[] args) 
