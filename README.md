@@ -38,6 +38,7 @@ This is a simple, self-conatined Spring Boot Web Application with REST end point
 ## Details
 
 - [Installation](documents/INSTALLATION.MD)  
+- [API](documents/API.MD)
 - [Docker](documents/DOCKER.md)  
 
 **Note** : This project has been used as an example for the following blog posts.
@@ -47,34 +48,6 @@ This is a simple, self-conatined Spring Boot Web Application with REST end point
 - [Flyway version control for Relational Databases with Spring Boot](https://anantharajuc.github.io/Spring-Boot-Flyway/)
 - [Loading Environment Variables via dotenv-java](https://anantharajuc.github.io/dotenv-java/)
 - [Deploying Spring Boot Web Application on Heroku](https://anantharajuc.github.io/Spring-Boot-Heroku/)
-
-## Explore Rest APIs
-
-### URLs
-
-| RESTful URL                      | HTTP Action | Noun |Business Operation |Sample Valid Request Body | 
-|----------------------------------|-------------|------|-------------------|--------------------------|
-|`/api/person`                     |GET          |person|get all persons    |                          |  
-|`/api/person`                     |POST         |person|create person      |[JSON](#person)           |  
-|`/api/person/{id}`                |PUT          |person|update person      |[JSON](#person)           | 
-|`/api/person/{id}`                |GET          |person|get person by id   |                          |  
-|`/api/person/{id}`                |DELETE       |person|delete person by id|                          | 
-
-|Web URL                           | HTTP Action | Operation                | 
-|----------------------------------|-------------|--------------------------|
-|`http://localhost:8080/index.html`| GET         | Returns `index.html` page|
-
-### Sample Valid JSON Request Body
-
-##### <a id="person">Person -> /api/person</a>
-
-```json
-{
-	"name": "Johnny",
-	"email": "examplex@domain.com",
-	"mobileNumber": "123456789x"
-}
-```
 
 <!-- CONTRIBUTING -->
 ## Contributing
