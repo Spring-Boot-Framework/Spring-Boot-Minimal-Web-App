@@ -6,7 +6,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import io.github.anantharajuc.sbmwa.exception.ResourceNotFoundException;
+import io.github.anantharajuc.sbmwa.model.Address;
 import io.github.anantharajuc.sbmwa.model.Person;
+import io.github.anantharajuc.sbmwa.repository.AddressRepository;
 import io.github.anantharajuc.sbmwa.repository.PersonRepository;
 import lombok.extern.log4j.Log4j2;
 
@@ -16,6 +18,9 @@ public class PersonServiceImpl implements PersonService
 {
 	@Autowired
 	PersonRepository personRepository;
+	
+	@Autowired
+	AddressRepository addressRepository;
 	
 	public List<Person> getAllPersons() 
 	{
@@ -34,7 +39,7 @@ public class PersonServiceImpl implements PersonService
 	
 	public Person savePerson(Person person) 
 	{
-		log.info("-----> saveOrUpdate service");
+		log.info("-----> saveOrUpdate service"+person);
 		
         return personRepository.save(person);
     }
@@ -63,8 +68,18 @@ public class PersonServiceImpl implements PersonService
 		
 		person.setName(personDetails.getName());
 		person.setEmail(personDetails.getEmail()); 
-		person.setMobileNumber(personDetails.getMobileNumber()); 
+		person.setMobileNumber(personDetails.getMobileNumber()); 	
 		
+		Address address = addressRepository.findById(person.getAddress().getId())
+				            .orElseThrow(() -> new ResourceNotFoundException("Address", "id", id));
+		
+		address.setCity(personDetails.getAddress().getCity());
+		address.setZipcode(personDetails.getAddress().getZipcode());
+		
+		addressRepository.save(address);
+		
+		//person.setAddress(personDetails.getAddress().getId()); 
+
 		return personRepository.save(person);
 	}
 }

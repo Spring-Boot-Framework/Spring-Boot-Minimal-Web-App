@@ -22,8 +22,12 @@
 
 ```json
 {
-	"name": "Johnny",
-	"email": "examplex@domain.com",
-	"mobileNumber": "123456789x"
+    "name": "Johnny",
+    "email": "example-johnny@domain.com",
+    "mobileNumber": "1234771",
+    "address": {
+        "city": "Wisokyburghh-update",
+        "zipcode": "9077-777"
+    }
 }
 ```

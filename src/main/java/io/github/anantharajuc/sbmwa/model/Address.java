@@ -1,17 +1,15 @@
 package io.github.anantharajuc.sbmwa.model;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EntityListeners;
-import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
-import javax.validation.constraints.Email;
+import javax.validation.constraints.Size;
 
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -21,29 +19,31 @@ import lombok.Setter;
 import lombok.experimental.FieldDefaults;
 
 @Entity
-@Table(name="person")
+@Table(name = "address")
 @EntityListeners(AuditingEntityListener.class)
 @Getter
 @Setter
-@FieldDefaults(level=AccessLevel.PRIVATE)
 @AllArgsConstructor
 @NoArgsConstructor
-public class Person extends AuditEntity
+@FieldDefaults(level=AccessLevel.PRIVATE)
+public class Address extends AuditEntity
 {
 	private static final long serialVersionUID = 1L;
 	
-	@Column(name="name", nullable = false)
-	String name;
+	public Address(String city2, String zipcode2) 
+	{
+		
+	}
 	
-	@Email
-	@Column(name="email", nullable = false, unique=true)
-	String email;
+	@Column(name="city", nullable=true)
+	@Size(min=3, max=15, message="city must be between 3 and 15 characters.")
+	String city;
 	
-	@Column(name="mobile_number", nullable = true)
-	String mobileNumber;
+	@Column(name="zipcode", nullable=true)
+	@Size(min=3, max=15, message="zipcode must be between 3 and 15 characters.")
+	String zipcode;
 	
-	@JsonManagedReference
-	@OneToOne(cascade=CascadeType.ALL, orphanRemoval=true)
-	@JoinColumn(name="address_id")
-	Address address;
+	@JsonBackReference
+	@OneToOne(mappedBy="address")
+	Person person;
 }
