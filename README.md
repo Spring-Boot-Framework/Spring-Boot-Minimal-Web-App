@@ -38,8 +38,9 @@ This is a simple, self-conatined Spring Boot Web Application with REST end point
 ## Details
 
 - [Installation](documents/INSTALLATION.MD)  
-- [API](documents/API.MD)
+- [API](documents/API.md)
 - [Docker](documents/DOCKER.md)  
+- [Documentation](documents/DOCUMENTATION.md)  
 
 **Note** : This project has been used as an example for the following blog posts.
 
