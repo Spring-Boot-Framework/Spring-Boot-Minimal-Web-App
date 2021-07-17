@@ -29,3 +29,24 @@ CREATE TABLE `person` (
   `mobile_number` VARCHAR(128),
   `address_id` bigint(20)
 );
+
+--
+-- Table structure for table `books`
+--
+
+CREATE TABLE `books` (
+  `id` bigint(20) PRIMARY KEY AUTO_INCREMENT,
+  `created_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `last_modified_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `title` varchar(255) NOT NULL,
+  `person_id` bigint(20) DEFAULT NULL,
+  KEY `FK5w75tx731o2t3abhgesnobgih` (`person_id`),
+  CONSTRAINT `FK5w75tx731o2t3abhgesnobgih` FOREIGN KEY (`person_id`) REFERENCES `person` (`id`)
+);
+
+
+
+
+
+
+

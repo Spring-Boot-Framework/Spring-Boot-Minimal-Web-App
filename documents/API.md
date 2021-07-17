@@ -22,12 +22,20 @@
 
 ```json
 {
-    "name": "Johnny",
-    "email": "example-johnny@domain.com",
-    "mobileNumber": "1234771",
-    "address": {
-        "city": "Wisokyburghh-update",
-        "zipcode": "9077-777"
+  "name": "aws3",
+  "email": "examplt3@domain.com",
+  "mobileNumber": "1234771",
+  "address": {
+    "city": "Wisopburgh-aws",
+    "zipcode": "9077-777"
+  },
+  "books": [
+    {
+      "title": "book33"
+    },
+    {
+      "title": "book34"
     }
+  ]
 }
 ```

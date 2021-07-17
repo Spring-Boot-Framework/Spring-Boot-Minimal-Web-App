@@ -1,10 +1,12 @@
 package io.github.anantharajuc.sbmwa.model;
 
+import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EntityListeners;
 import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.Email;
@@ -18,6 +20,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 import lombok.experimental.FieldDefaults;
 
 @Entity
@@ -28,6 +31,7 @@ import lombok.experimental.FieldDefaults;
 @FieldDefaults(level=AccessLevel.PRIVATE)
 @AllArgsConstructor
 @NoArgsConstructor
+@ToString
 public class Person extends AuditEntity
 {
 	private static final long serialVersionUID = 1L;
@@ -46,4 +50,8 @@ public class Person extends AuditEntity
 	@OneToOne(cascade=CascadeType.ALL, orphanRemoval=true)
 	@JoinColumn(name="address_id")
 	Address address;
+	
+	@OneToMany(targetEntity = Books.class,cascade = CascadeType.ALL)
+    @JoinColumn(name="person_id",referencedColumnName="id")
+    List<Books> books;
 }

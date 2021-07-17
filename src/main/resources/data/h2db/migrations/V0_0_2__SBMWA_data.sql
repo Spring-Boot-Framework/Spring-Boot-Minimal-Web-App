@@ -17,3 +17,10 @@ INSERT INTO `address` (`city`,`zipcode`) VALUES ('Wisokyburgh','90565-777');
 
 INSERT INTO `person` (`name`,`email`,`mobile_number`,`address_id`) VALUES ('John','example1@domain.com','1234567890',1);
 INSERT INTO `person` (`name`,`email`,`mobile_number`,`address_id`) VALUES ('Jane','example2@domain.com','1234567891',2);
+
+--
+-- Data for table `books`
+--
+
+INSERT INTO `books` (`title`,`person_id`) VALUES ('book21',1);
+INSERT INTO `books` (`title`,`person_id`) VALUES ('book11',1);

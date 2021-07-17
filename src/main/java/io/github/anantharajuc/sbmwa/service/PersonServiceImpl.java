@@ -7,8 +7,10 @@ import org.springframework.stereotype.Service;
 
 import io.github.anantharajuc.sbmwa.exception.ResourceNotFoundException;
 import io.github.anantharajuc.sbmwa.model.Address;
+import io.github.anantharajuc.sbmwa.model.Books;
 import io.github.anantharajuc.sbmwa.model.Person;
 import io.github.anantharajuc.sbmwa.repository.AddressRepository;
+import io.github.anantharajuc.sbmwa.repository.BooksRepository;
 import io.github.anantharajuc.sbmwa.repository.PersonRepository;
 import lombok.extern.log4j.Log4j2;
 
@@ -21,6 +23,9 @@ public class PersonServiceImpl implements PersonService
 	
 	@Autowired
 	AddressRepository addressRepository;
+	
+	@Autowired
+	BooksRepository booksRepository;
 	
 	public List<Person> getAllPersons() 
 	{
@@ -40,7 +45,7 @@ public class PersonServiceImpl implements PersonService
 	public Person savePerson(Person person) 
 	{
 		log.info("-----> saveOrUpdate service"+person);
-		
+
         return personRepository.save(person);
     }
 	
@@ -75,11 +80,21 @@ public class PersonServiceImpl implements PersonService
 		
 		address.setCity(personDetails.getAddress().getCity());
 		address.setZipcode(personDetails.getAddress().getZipcode());
-		
+
 		addressRepository.save(address);
 		
-		//person.setAddress(personDetails.getAddress().getId()); 
-
+		List<Books> booksNew = personDetails.getBooks();
+			
+		if(!booksNew.isEmpty())
+		{
+			log.info("-----> new books count : "+booksNew.size());
+			
+			for(int i = 0; i< booksNew.size();i++)
+			{
+				log.info("-----> book ID : "+booksNew.get(i).getId()+" -----> book title : "+booksNew.get(i).getTitle());
+			}			
+		}
+		
 		return personRepository.save(person);
 	}
 }
